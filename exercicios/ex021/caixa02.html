@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>grouping tags</title>
+
+  <style>
+    @font-face {
+      font-family: "lol";
+      src: url("fontes/BeaufortforLOL-Italic.ttf") format("truetype");
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: "spiengel";
+      src: url("fontes/spiegel.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    body{
+      margin: 0;
+      font-family: "lol", sans-serif;
+      color: #FFFFFF;
+      background-color: #0A1428;
+    }
+
+    /* ✅ container para manter igual no PC e bom no mobile */
+    main{
+      max-width: 1100px;
+      margin: 0 0 0 50px; 
+      padding: 0 50px;
+    }
+
+    header > h1 {
+      font-weight: 700;
+      color: #C8AA6E;
+      margin: 50px 96px 0px;
+    }
+
+    /* Título "Jinx" */
+    #titulo > h2{
+      margin: 0;
+      font-size: 64px;
+      line-height: 1;
+      padding: 0;
+    }
+
+    /* ✅ texto: em vez de margin gigante, controla a largura com max-width */
+    #assunto > p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 26px;
+      font-family: "spiengel", sans-serif;
+      font-weight: 400;
+
+      max-width: 80ch;        /* evita ficar muito largo e evita virar coluna */
+      margin: 16px 0 24px 0;  /* simples e responsivo */
+    }
+
+    #assunto img{
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 0 16px 0;
+    }
+
+    aside > p {
+      font-family: "lol", sans-serif;
+      font-style: italic;
+      font-weight: 900; /* ✅ era 900px (errado) */
+      font-size: 26px;
+      background-color: #FFFFFF;
+      color: #000000;
+      padding: 12px 16px;
+      border-radius: 8px;
+      max-width: 80ch;
+      margin: 0 0 32px 0;
+    }
+
+    footer {
+      background-color: #292929;
+      padding: 16px 50px;
+    }
+
+    footer p{
+      margin: 0 0 12px 0;
+    }
+
+    nav {
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+      background-color: #575757;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      font-family: "spiengel", sans-serif;
+    }
+
+    nav a:hover{
+      text-decoration: underline;
+    }
+
+    /* ✅ ajuste para telas pequenas */
+    @media (max-width: 600px){
+      main{
+        padding: 0 20px;
+      }
+
+      header > h1{
+        margin: 30px 20px 0;
+      }
+
+      footer{
+        padding: 16px 20px;
+      }
+
+      #titulo > h2{
+        font-size: 48px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>O Gatilho Desenfreado</h1>
+  </header>
+
+  <main>
+    <section id="titulo">
+      <h2>Jinx</h2>
+    </section>
+
+    <section id="assunto">
+      <p>
+        Jinx, uma criminosa desequilibrada e impulsiva da Subferia, é atormentada
+        pelas consequências de seu passado, mas isso não a impede de deixar sua
+        marca caótica de pandemônio em Piltover e Zaun...
+      </p>
+
+      <img src="imagens/Jinx_0.jpg" alt="Jinx">
+
+      <aside>
+        <p>
+          A Jinx é uma das personagens principais e campeã jogável do universo
+          League of Legends (LoL), criado pela Riot Games.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Isso é um site teste para eu treinar</p>
+
+    <nav>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+    </nav>
+  </footer>
+</body>
+</html>
