@@ -10,3 +10,5 @@ Este repositório é destinado aos meus estudos do curso de HTML5 e CSS3 do prof
 Registrar minha evolução no desenvolvimento web.
 
  ✍️ Repositório de estudos pessoais.
+
+ <a href="https://henrique-brendo.github.io/HTML-CSS/desafios/desafio10/">Abrir o desafio10 </a>
