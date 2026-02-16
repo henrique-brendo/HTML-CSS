@@ -9,4 +9,4 @@ Este repositório é destinado aos meus estudos do curso de HTML5 e CSS3 do prof
 ## 🎯 Objetivo
 Registrar minha evolução no desenvolvimento web.
 
-✍️ Repositório de estudos pessoais.
+ ✍️ Repositório de estudos pessoais.
