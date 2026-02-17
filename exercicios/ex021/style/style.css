@@ -34,7 +34,7 @@ section {
     border: 1px solid black;
     background-image: url(../imagens/jinx.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 div {
