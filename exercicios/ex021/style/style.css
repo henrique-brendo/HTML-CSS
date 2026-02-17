@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: lol;
+    src: url(../fontes/BeaufortforLOL-Italic.ttf);
+}
+
+* {
+    margin: 0;
+}
+
+nav {
+    height: 75px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    background-color:#111111;
+    box-shadow: inset #ffffff12 -1px 0px 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    line-height: 75px;
+    padding: 10px 30px;
+}
+
+nav > a:hover {
+    background-color: #ffffff12;
+    border-radius: 10px;
+    color: rgb(200,170,110);
+}
+section {
+    min-height: 850px;
+    border: 1px solid black;
+    background-image: url(../imagens/jinx.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div {
+    height: 809px;
+    padding: 20px;
+    background-color: #00000071;
+    border-radius: 10px;
+    
+}
+
+div > h1 {
+    font-family: lol, sans-serif;
+    color: rgb(200, 170, 110);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+div > h2 {
+    font-family: lol, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+div > p {
+    max-width: 714px;
+    font-family: Spiegel, sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+}
