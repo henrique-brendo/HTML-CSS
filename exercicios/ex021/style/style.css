@@ -6,7 +6,8 @@
 }
 
 * {
-    margin: 0;
+    margin: 0px;
+
 }
 
 nav {
@@ -16,6 +17,7 @@ nav {
     background-color:#111111;
     box-shadow: inset #ffffff12 -1px 0px 10px;
     position: fixed;
+    z-index: 999;
 }
 
 nav > a {
@@ -35,20 +37,48 @@ nav > a:hover {
     min-height: 100vh;
     background-image: url(../imagens/jinx.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     
 
     display: flex;
     align-items: center;   /* centraliza vertical */
+
+    position: relative;
+    overflow: hidden;
     
 }
 
+#teste::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.6) 35%,
+        rgba(0, 0, 0, 0.2) 60%,
+        rgba(0, 0, 0, 0) 80%
+    );
+
+    z-index: 1;
+
+}
+
+
 
 #teste > div {
+    position: absolute;
+    z-index: 2;
+    top: 24%;
+    left: 13%;
+    transform: translate(-10%);
+
+
     max-width: 700px;
-    margin-left: 3%;   /* controla distância da esquerda */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
+    
     border-radius: 10px;
 }
 
