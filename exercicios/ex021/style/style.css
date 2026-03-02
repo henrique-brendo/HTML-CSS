@@ -114,3 +114,52 @@ div > p {
     line-height: 28px;
     color: rgb(255, 255, 255);
 }
+
+section {
+    background-image: url(../imagens/Uma\ arte\ inspirada\ e.png);
+    background-size: cover;
+    background-position: center 13%;
+    min-height: 100vh;
+}
+
+section > p {
+    max-width: 300px;
+    font-family: Spiegel, sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+
+    position: absolute;
+    top: 24%;
+    left: 13%;
+    transform: translate(-10%);
+}
+
+@media (min-width: 600px) {
+    section {
+        background-image: url(../imagens/ChatGPT\ Image\ 2\ de\ mar.\ de\ 2026\,\ 18_08_28.png);
+        position: relative; /* necessário para overlay */
+        overflow: hidden;
+    }
+
+    section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to left,                /* começa claro à direita e escurece à esquerda */
+            rgba(0,0,0,0) 0%,       /* totalmente transparente no lado direito */
+            rgba(0,0,0,0.2) 40%,    /* começa a escurecer */
+            rgba(0,0,0,0.6) 70%,    /* mais escuro */
+            rgba(0,0,0,0.8) 100%    /* bem escuro no lado esquerdo */
+        );
+        z-index: 1;
+    }
+
+    section > * {
+        position: relative; /* garante que o conteúdo fique acima do overlay */
+        z-index: 2;
+    }
+}
