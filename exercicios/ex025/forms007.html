@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <H1>Exemplo de Formulário</H1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icamps">Campeões do lol</label>
+            <select name="campeões" id="icamps">
+                <optgroup label="MID">
+                    <option value="ahri">Ahri</option>
+                    <option value="akali">Akali</option>
+                    <option value="diana">Diana</option>
+                </optgroup>
+
+                <optgroup label="ADC">
+                    <option value="ashe">Ashe</option>
+                    <option value="caitlyn">Caitlyn</option>
+                    <option value="jinx" selected>Jinx</option>
+                </optgroup>
+
+                <optgroup label="TOP">
+                    <option value="urgot">Urgot</option>
+                    <option value="fiora">Fiora</option>
+                    <option value="camille">Camille</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="isups">Suportes para Jinx</label>
+            <input type="text" name="sups" id="isups" list="lstsups">
+            <datalist id="lstsups">
+                <option value="Braum">Braum</option>
+                <option value="Thresh">Thresh</option>
+                <option value="Karma">Karma</option>
+                <option value="Lulu">Lulu</option>
+                <option value="Soraka">Soraka</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Como se comportar na lane:</label><br>
+            <textarea name="msg" id="imsg" cols="120" rows="15"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
